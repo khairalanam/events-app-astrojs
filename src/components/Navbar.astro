@@ -1,14 +1,55 @@
----
-const value = 0;
----
-
-<>
-  <h1>Khair's Posts</h1>
+<section class="nav-section">
+  <h1 class="main-logo">KHAIR'S POSTS</h1>
   <nav>
     <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/posts">Posts</a></li>
+      <li><a href="/" class="nav-links">Home</a></li>
+      <li><a href="/about" class="nav-links">About</a></li>
+      <li><a href="/posts" class="nav-links">Posts</a></li>
     </ul>
   </nav>
-</>
+</section>
+
+<style>
+  .nav-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 5em;
+    background-color: white;
+    align-items: center;
+  }
+
+  .main-logo {
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    font-weight: 100;
+    color: #fe7f2d;
+  }
+
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 4em;
+  }
+
+  .nav-links {
+    text-decoration: none;
+    font-weight: 100;
+    color: black;
+    transition: 300ms;
+  }
+
+  .nav-links:hover {
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    color: black;
+  }
+
+  .nav-links:focus {
+    border: 1px black solid;
+    border-radius: 0.25rem;
+  }
+
+  .nav-links:active {
+    font-weight: bold;
+  }
+</style>
