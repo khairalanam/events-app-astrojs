@@ -9,4 +9,6 @@ tags: [css, webdev, learning]
 
 CSS (Cascading Style Sheets) is a vital skill for web designers and developers, as it allows you to control the visual appearance and layout of web pages. Understanding CSS empowers you to create visually appealing and user-friendly websites. This article serves as a beginner's guide to learning CSS, providing valuable insights and resources to help you navigate the world of styling and design.
 
+<br>
+
 To embark on your CSS learning journey, begin by grasping the core concepts of selectors and properties. Understand how selectors target specific elements in your HTML markup, and how properties modify the appearance of those elements. Explore various CSS properties for typography, colors, margins, and padding to gain control over the visual aspects of your web page. As you progress, delve into layout techniques such as positioning, flexbox, and grid systems to create responsive and well-structured designs. Online tutorials, coding exercises, and CSS reference guides are excellent resources to aid your learning process.
