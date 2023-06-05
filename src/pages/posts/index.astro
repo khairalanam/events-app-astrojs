@@ -17,6 +17,7 @@ const posts = await Astro.glob("../../posts/*.md");
             date={post.frontmatter.date}
             author={post.frontmatter.author}
             tags={post.frontmatter.tags}
+            slug={post.frontmatter.slug}
           />
         ))
       }
