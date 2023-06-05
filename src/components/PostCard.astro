@@ -1,0 +1,20 @@
+---
+export interface Props {
+  title: string;
+  excerpt: string;
+  date: string;
+  author: string;
+  tags: string[];
+}
+
+const { title, excerpt, date, author, tags } = Astro.props as Props;
+---
+
+<article>
+  <h2>{title}</h2>
+  <ul class="tags">
+    {tags.map((tag) => <li class="tag">{tag}</li>)}
+  </ul>
+  <h3>{author} on {date}</h3>
+  <p>{excerpt}</p>
+</article>
