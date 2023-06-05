@@ -75,3 +75,31 @@ body {
   color: white;
   font-weight: 100;
 }
+
+.posts-section {
+  margin: 4em 0em;
+  padding: 0em 5em;
+}
+
+.posts-section .sub-headings {
+  margin-bottom: 1em;
+}
+
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+article {
+  border-radius: 1rem;
+  background-color: white;
+  padding: 1.5em 3em;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.tags {
+  display: flex;
+  list-style-type: none;
+  gap: 1em;
+}
