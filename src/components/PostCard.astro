@@ -5,16 +5,17 @@ export interface Props {
   date: string;
   author: string;
   tags: string[];
+  slug: string;
 }
 
-const { title, excerpt, date, author, tags } = Astro.props as Props;
+const { title, excerpt, date, author, tags, slug } = Astro.props as Props;
 ---
 
-<article>
+<a href=`/posts/${slug}` class="article">
   <h2>{title}</h2>
   <ul class="tags">
     {tags.map((tag) => <li class="tag">{tag}</li>)}
   </ul>
-  <h3>{author} on {date}</h3>
+  <h3>{author} on {new Date(date).toLocaleDateString()}</h3>
   <p>{excerpt}</p>
-</article>
+</a>
